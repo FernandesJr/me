@@ -1,2 +1,20 @@
-Me online resume
-<router-outlet></router-outlet>
+<mat-drawer-container autosize>
+  <mat-drawer #drawer class="sidenav" [mode]="modeValueDrawer">
+    <div class="me-profile">
+      <img src="../assets/images/gilberto/gil-avatar.png" alt="perfil-gilberto">
+    </div>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <div class="nav-bar">
+      <button mat-icon-button color="primary" aria-label="abrir ou fechar menu"
+      (click)="drawer.toggle(); changeIconSideNavu()">
+        <mat-icon *ngIf="menuOpen">menu</mat-icon>
+        <mat-icon *ngIf="!menuOpen">close</mat-icon>
+      </button>
+      <p>Gilberto Fernandes Full Stack Developer</p>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+</mat-drawer-container>
