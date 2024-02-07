@@ -3,16 +3,23 @@
     <div class="me-profile">
       <img src="../assets/images/gilberto/gil-avatar.png" alt="perfil-gilberto">
     </div>
+    <a
+      [routerLinkActive]="['active']"
+      routerLink="about"
+      (click)="drawer.toggle(); changeIconSideNav()">
+      <mat-icon aria-hidden="false" aria-label="me" fontIcon="account_circle"></mat-icon>
+      <span>Sobre</span>
+    </a>
   </mat-drawer>
 
   <div class="sidenav-content">
     <div class="nav-bar">
       <button mat-icon-button color="primary" aria-label="abrir ou fechar menu"
-      (click)="drawer.toggle(); changeIconSideNavu()">
+      (click)="drawer.toggle(); changeIconSideNav()">
         <mat-icon *ngIf="menuOpen">menu</mat-icon>
         <mat-icon *ngIf="!menuOpen">close</mat-icon>
       </button>
-      <p>Gilberto Fernandes Full Stack Developer</p>
+      <p>Gilberto Fernandes, Full Stack Developer</p>
     </div>
   </div>
   <router-outlet></router-outlet>

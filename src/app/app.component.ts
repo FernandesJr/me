@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+
   menuOpen: boolean = true;
   modeValueDrawer: any = 'side';
   widthScreen: number = window.innerWidth;
@@ -19,7 +19,7 @@ export class AppComponent {
     if (this.widthScreen < 550) this.modeValueDrawer = 'over';
   }
 
-  changeIconSideNavu(): void {
+  changeIconSideNav(): void {
     if (this.widthScreen > 550) this.menuOpen = !this.menuOpen;
   }
 }
