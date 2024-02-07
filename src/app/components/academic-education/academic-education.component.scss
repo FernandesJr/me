@@ -1,0 +1,39 @@
+main {
+  padding: 20px;
+
+  h1 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    .course {
+      margin: 20px;
+      padding: 20px;
+      width: 330px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px #0003;
+      background: #42aef14b;
+
+      span {
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: .7rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+
+      .course-title {
+        margin-top: 10px;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+    }
+  }
+}
