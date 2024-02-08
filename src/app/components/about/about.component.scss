@@ -26,5 +26,45 @@ main {
   .color-primary {
     color: var(--primary-color);
   }
+
+  .my-stacks {
+
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0003;
+    background-color: var(--primary-color);
+    .stacks {
+      display: flex;
+      flex-wrap: wrap;
+      .stack {
+        display: flex;
+        align-items: center;
+        margin: 0 10px 10px 0;
+        padding: 10px;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 1rem;
+        background-color: rgb(66 174 241);
+        color: var(--white);
+        &:hover {
+          .img-anime{
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+        .avatar {
+          img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+
+          }
+        }
+      }
+    }
+  }
 }
 
