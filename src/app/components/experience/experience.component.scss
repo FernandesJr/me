@@ -1,0 +1,27 @@
+main {
+  padding: 20px;
+  h1 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+  }
+  .experiences {
+    display: flex;
+    flex-wrap: wrap;
+    .experience {
+      .experience-title {
+        color: var(--secondary-color);
+      }
+      margin: 20px;
+      padding: 20px;
+      width: 330px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px #0003;
+      background: var(--primary-color);
+      color: white;
+      .italic {
+        font-style: italic;
+      }
+    }
+  }
+}

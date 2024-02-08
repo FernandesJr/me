@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 import { AboutComponent } from './components/about/about.component';
 import { AcademicEducationComponent } from './components/academic-education/academic-education.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    AcademicEducationComponent
+    AcademicEducationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

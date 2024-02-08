@@ -17,6 +17,13 @@
       <mat-icon aria-hidden="false" aria-label="me" fontIcon="school"></mat-icon>
       <span>Formação</span>
     </a>
+    <a
+      [routerLinkActive]="['active']"
+      routerLink="experience"
+      (click)="drawer.toggle(); changeIconSideNav()">
+      <mat-icon aria-hidden="false" aria-label="me" fontIcon="badge"></mat-icon>
+      <span>Experiência</span>
+    </a>
   </mat-drawer>
 
   <div class="sidenav-content">
