@@ -24,6 +24,13 @@
       <mat-icon aria-hidden="false" aria-label="me" fontIcon="badge"></mat-icon>
       <span>Experiência</span>
     </a>
+    <a
+      [routerLinkActive]="['active']"
+      routerLink="contact"
+      (click)="drawer.toggle(); changeIconSideNav()">
+      <mat-icon aria-hidden="false" aria-label="me" fontIcon="call"></mat-icon>
+      <span>Contato</span>
+    </a>
   </mat-drawer>
 
   <div class="sidenav-content">

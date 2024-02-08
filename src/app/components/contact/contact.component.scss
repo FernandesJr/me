@@ -1,0 +1,59 @@
+main {
+  padding: 20px;
+  h1 {
+    font-size: 1.3rem;
+    color: var(--secondary-color)
+  }
+
+  .background-base {
+    margin: auto;
+    max-width: 450px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    padding: 10px;
+    .my-contact {
+      width: 95%;
+      border-radius: 10px;
+      border: 1px solid var(--secondary-color);
+      box-shadow: 5px 5px 5px #0000003a;
+      color: var(--white);
+      background-color: #42aef15f;
+      h2 {
+        padding: 10px 0 0 10px;
+      }
+
+      .data {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        mat-icon {
+          margin-right: 5px;
+          color: var(--secondary-color);
+        }
+      }
+
+      .divider {
+        margin: 5px 0;
+        width: 75%;
+        height: 2px;
+        background: var(--secondary-color);
+      }
+
+      .icons-contact {
+        display: flex;
+        img {
+          margin: 10px;
+          width: 50px;
+          border-radius: 50%;
+          box-shadow: 5px 5px 5px #0000003a;
+          &:hover {
+            box-shadow: 10px 10px 10px #0000003a;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

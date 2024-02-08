@@ -8,13 +8,15 @@ import { MaterialModule } from './shared/material/material.module';
 import { AboutComponent } from './components/about/about.component';
 import { AcademicEducationComponent } from './components/academic-education/academic-education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     AcademicEducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
